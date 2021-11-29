@@ -1,0 +1,36 @@
+@charset 'utf-8';
+@import "./partials/colors";
+html,
+body,
+.App {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  color: $white;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  background: fixed;
+  overflow-x: hidden;
+
+  a {
+    text-decoration: none;
+  }
+}
+#root {
+  background: -webkit-linear-gradient($black, $white);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+/* Enforces border-box for whole site */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import "./partials/head";
+@import "./partials/button";
+@import "./partials/star";
+@import "./partials/footer";

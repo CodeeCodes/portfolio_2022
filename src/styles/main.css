@@ -1,0 +1,117 @@
+html,
+body,
+.App {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  color: #f0ffff;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f4f4f4;
+  background: fixed;
+  overflow-x: hidden;
+}
+
+html a,
+body a,
+.App a {
+  text-decoration: none;
+}
+
+#root {
+  background: -webkit-linear-gradient(#282c34, #f0ffff);
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Enforces border-box for whole site */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.head_main {
+  color: #f0ffff;
+  text-align: center;
+}
+
+.button_div {
+  text-align: center;
+}
+
+.button_div .button_div_press {
+  cursor: pointer;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-size: 20px;
+  border-radius: 4px;
+  margin: 10px;
+  width: 20%;
+  height: 40px;
+  background-color: #ff355e;
+  color: #f0ffff;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.star {
+  background-color: #f0ffff;
+  width: 2px;
+  height: 2px;
+  -webkit-animation: animStar 50s linear infinite;
+          animation: animStar 50s linear infinite;
+}
+
+.footer {
+  text-align: center;
+  padding: 0 5%;
+  color: #f0ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 200px;
+}
+
+.footer__heading {
+  font-size: 16px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+}
+
+.footer__heading-link {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 55%;
+  text-decoration: none;
+  color: #f0ffff;
+  font-size: 10px;
+  margin: 0;
+}
+
+.footer__text {
+  font-size: 12px;
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+/*# sourceMappingURL=main.css.map */

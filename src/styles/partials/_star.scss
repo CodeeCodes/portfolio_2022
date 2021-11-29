@@ -1,0 +1,8 @@
+@import "./colors";
+
+.star {
+  background-color: $white;
+  width: 2px;
+  height: 2px;
+  animation: animStar 50s linear infinite;
+}
