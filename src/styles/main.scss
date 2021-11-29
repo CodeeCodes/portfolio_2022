@@ -11,6 +11,9 @@ body,
   background-color: #f4f4f4;
   background: fixed;
   overflow-x: hidden;
+  & .blur {
+    opacity: 0.1;
+  }
 
   a {
     text-decoration: none;
@@ -32,5 +35,7 @@ body,
 
 @import "./partials/head";
 @import "./partials/button";
+@import "./partials/prevProjects";
+@import "./partials/form";
 @import "./partials/star";
 @import "./partials/footer";
