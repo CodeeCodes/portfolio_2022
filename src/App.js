@@ -1,9 +1,10 @@
 import "./styles/main.css";
-import Button from "./components/hello_button";
+// import Button from "./components/hello_button";
 import Welcome from "./components/hello";
 import PreviousProj from "./components/prevProjects";
 import Stars from "./components/stars";
 import Footer from "./components/footer";
+import Form from "./components/form";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Welcome />
       <PreviousProj />
       {""}
-      <Button />
+      {/* <Button /> */}
+      <Form />
       <Footer />
     </div>
   );
