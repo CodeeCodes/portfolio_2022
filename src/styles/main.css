@@ -184,8 +184,6 @@ body a,
 
 .form {
   padding: 5px;
-  margin: 30px;
-  width: 100%;
   text-align: center;
 }
 
@@ -199,17 +197,8 @@ body a,
 
 .footer {
   text-align: center;
-  padding: 0 5%;
   color: #282c34;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 200px;
+  margin: 50px 20px;
 }
 
 .footer__heading {
@@ -237,5 +226,9 @@ body a,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.footer_main {
+  padding: 5px;
 }
 /*# sourceMappingURL=main.css.map */

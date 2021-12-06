@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer_main">
       <div className="footer__heading-div">
         <h1 className="footer__heading">
           Let's Work Together{" "}
@@ -12,6 +12,7 @@ export default function Footer() {
           </span>
         </h1>
       </div>
+
       <div className="footer__text-div">
         <p className="footer__text">Accepting new projects and collabs!</p>
         <p className="footer__heading-link">

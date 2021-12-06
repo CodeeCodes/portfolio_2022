@@ -14,8 +14,10 @@ function App() {
       <PreviousProj />
       {""}
       {/* <Button /> */}
-      <Form />
-      <Footer />
+      <div className="footer">
+        <Form />
+        <Footer />
+      </div>
     </div>
   );
 }

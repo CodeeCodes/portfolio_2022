@@ -1,51 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
+
 export default function Form() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const form = useRef();
 
-  const onNameChange = (e) => setName(e.target.value);
-  const onEmailChange = (e) => setEmail(e.target.value);
-  const onPhoneNumberChange = (e) => setPhoneNumber(e.target.value);
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-
-    const data = { name, email, phoneNumber };
-    const requestOptions = {
-      method: "POST",
-      header: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    };
-    console.log(requestOptions.body);
-
-    fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
-      .then((response) => response.json())
-      .then((json) => console.log(json, "first"));
-
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then((json) => console.log(json, "last"));
+    emailjs
+      .sendForm(
+        "service_rpzp8cq",
+        "template_i47ouzc",
+        form.current,
+        "user_rTGEWElIw9Z8D9JObO3Qi"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <form className="form">
-      <input placeholder="Name" value={name} onChange={onNameChange} required />
+    <form ref={form} onSubmit={sendEmail} className="form">
+      <label className="form_name">Name</label>
       <input
+        className="form_name"
+        type="text"
+        name="user_name"
+        placeholder="Name"
+      />
+      <label className="form_email">Email</label>
+      <input
+        className="form_email"
+        type="email"
+        name="user_email"
         placeholder="Email"
-        value={email}
-        onChange={onEmailChange}
-        required
       />
-      <input
-        placeholder="Phone Number"
-        value={phoneNumber}
-        onChange={onPhoneNumberChange}
-        required
-      />
-      <button type="submit" onClick={handleSubmit}>
-        Connect{" "}
-      </button>
+      <label className="form_message">Message</label>
+      <textarea name="message" className="form_message" placeholder="Message" />
+      <input type="submit" value="Send" />
     </form>
   );
 }
