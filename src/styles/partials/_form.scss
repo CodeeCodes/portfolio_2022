@@ -1,10 +1,48 @@
 @import "./colors";
 
 .form {
-  padding: 5px;
+  padding: 20px;
   text-align: center;
-  width: 50%;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 5px 10px 18px #888888;
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+
+  & input,
+  & textArea {
+    background-color: lightGrey;
+    color: $black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    margin: 0 25%;
+  }
+  & textArea {
+    margin: 10px 5%;
+    height: 200px;
+    width: 90%;
+  }
+  &_name,
+  &_email,
+  &_message {
+    height: 40px;
+    margin: 0 25%;
+    width: 50%;
+  }
+  &_button {
+    height: 40px;
+    width: 50%;
+    margin-top: 10px;
+  }
+  &_heading {
+    text-align: initial;
+    color: $white;
+  }
+  &_div {
+    width: 50%;
+    margin-right: 50%;
+  }
 }

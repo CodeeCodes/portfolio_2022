@@ -24,24 +24,34 @@ export default function Form() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="form">
-      <label className="form_name">Name</label>
-      <input
-        className="form_name"
-        type="text"
-        name="user_name"
-        placeholder="Name"
-      />
-      <label className="form_email">Email</label>
-      <input
-        className="form_email"
-        type="email"
-        name="user_email"
-        placeholder="Email"
-      />
-      <label className="form_message">Message</label>
-      <textarea name="message" className="form_message" placeholder="Message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div className="form_div">
+      {" "}
+      <h1 className="form_heading">Contact Me</h1>
+      <div className="form">
+        <form ref={form} onSubmit={sendEmail}>
+          <label className="form_name">Name</label>
+          <input
+            className="form_name"
+            type="text"
+            name="user_name"
+            placeholder="Name"
+          />
+          <label className="form_email">Email</label>
+          <input
+            className="form_email"
+            type="email"
+            name="user_email"
+            placeholder="Email"
+          />
+          <label className="form_message">Message</label>
+          <textarea
+            name="message"
+            className="form_message"
+            placeholder="Message"
+          />
+          <input className="form_button" type="submit" value="Send" />
+        </form>
+      </div>
+    </div>
   );
 }

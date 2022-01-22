@@ -3,4 +3,24 @@
 .head_main {
   color: $white;
   text-align: center;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 10px;
+
+  &_title {
+    margin: 0;
+
+    &_sub {
+      margin: 0;
+    }
+  }
+}
+.hello {
+  &_avatar {
+    width: 30%;
+    border-radius: 10px;
+
+    &_div {
+    }
+  }
 }
