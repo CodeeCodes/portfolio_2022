@@ -5,15 +5,19 @@ import PreviousProj from "./components/prevProjects";
 import Stars from "./components/stars";
 import Footer from "./components/footer";
 import Form from "./components/form";
+import Tech from "./components/technologies";
 
 function App() {
   return (
     <div className="App">
       <Stars />
       <Welcome />
-      <PreviousProj />
-      {""}
-      {/* <Button /> */}
+      <div className="main_div">
+        <PreviousProj />
+        <Tech />
+        {""}
+        {/* <Button /> */}
+      </div>
       <div className="footer">
         <Form />
         <Footer />

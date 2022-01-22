@@ -38,6 +38,7 @@ export default function PrevProjects() {
     setActive(event.target.getAttribute("data-projects"));
     let click = document.querySelector(".slider__button");
     click.classList.toggle("_active");
+    console.log(active);
   };
 
   return (
@@ -50,11 +51,11 @@ export default function PrevProjects() {
             alt="capstone-mock"
             className="projects__image"
           />
-          <a href={current.liveUrl}>
+          {/* <a href={current.liveUrl}>
             <div className="projects__div-button">
               <h3 className="projects__heading-small">View Site</h3>
             </div>
-          </a>
+          </a> */}
         </div>
         <div className="projects__div-small">
           <h3 className="projects__summary-heading">Tech-stack:</h3>
@@ -71,7 +72,7 @@ export default function PrevProjects() {
       <div className="slider">
         {Object.keys(projects).map((index) => {
           return (
-            <span
+            <div
               onClick={(event) => handleSetClick(event)}
               data-projects={index}
               key={index}

@@ -8,8 +8,11 @@ body,
   color: $white;
   height: 100vh;
   box-sizing: border-box;
+  background-image: url(.././assets/photos/website_background.jpeg);
   background-color: #f4f4f4;
-  background: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
   & .blur {
     opacity: 0.1;
@@ -32,6 +35,11 @@ body,
 *:after {
   box-sizing: inherit;
 }
+.main_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 @import "./partials/head";
 @import "./partials/button";
@@ -39,3 +47,4 @@ body,
 @import "./partials/form";
 @import "./partials/star";
 @import "./partials/footer";
+@import "./partials/technologies";
