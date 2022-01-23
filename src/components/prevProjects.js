@@ -15,6 +15,13 @@ export default function PrevProjects() {
         "  Sprint is an app, which allows anyone new to a city or new to the exercise world, connecting people in Vancouver about running routes around the city. See what people say about that route and follow yourself as you run these routes. Have up to date weather conditions and join the chat board to organize meetups and look up local races and runs around Vancouver .This is an app based around getting people moving with confidence and hopefully get like minded people connected.",
     },
     {
+      image: `${capstoneImage}`,
+      url: "https://github.com/CodeeCodes/capstone-codee-palmer",
+      techStack: "React, NodeJS, ExpressJS, MongoDb",
+      summary:
+        "  Sprint is an app, which allows anyone new to a city or new to the exercise world, connecting people in Vancouver about running routes around the city. See what people say about that route and follow yourself as you run these routes. Have up to date weather conditions and join the chat board to organize meetups and look up local races and runs around Vancouver .This is an app based around getting people moving with confidence and hopefully get like minded people connected.",
+    },
+    {
       image: `${portfolioImage}`,
       url: "https://github.com/CodeeCodes/portfolio-codee-palmer",
       liveUrl: "https://www.codeecodes.com/",

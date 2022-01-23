@@ -6,7 +6,7 @@ import reactSvg from "../assets/photos/svg/react.svg";
 import jsSvg from "../assets/photos/svg/javascript.svg";
 import sassSvg from "../assets/photos/svg/sass.svg";
 import nodeSvg from "../assets/photos/svg/nodejs.svg";
-import wordPressSvg from "../assets/photos/svg/wordpress.svg";
+import wordPressSvg from "../assets/photos/ethereum.png";
 import phpSvg from "../assets/photos/svg/php.svg";
 
 export default function Technologies() {
@@ -24,7 +24,7 @@ export default function Technologies() {
         </div>
         <div className="tech__image-div-small">
           <img src={wordPressSvg} alt="github" className="tech__image" />
-          <h5 className="tech__image-heading">WordPress</h5>
+          <h5 className="tech__image-heading">Solidity</h5>
         </div>
         <div className="tech__image-div-small">
           <img src={phpSvg} alt="github" className="tech__image" />

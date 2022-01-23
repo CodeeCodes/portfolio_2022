@@ -1,26 +1,57 @@
 @import "./colors";
 
-.head_main {
-  color: $white;
-  text-align: center;
-  width: 50%;
-  margin-left: 50%;
-  margin-top: 10px;
+.head {
+  &_main {
+    color: $white;
+    text-align: center;
+    // width: 50%;
+    // margin-left: 50%;
+    // margin-top: 10px;
 
-  &_title {
-    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
 
-    &_sub {
+    &_title {
       margin: 0;
+
+      &_sub {
+        margin: 0;
+      }
+    }
+  }
+  &_details {
+    &_div {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 45px;
+      &_small {
+        width: 20%;
+        height: 90px;
+        background-color: $red;
+        border-radius: 25px;
+        padding: 6px;
+
+        &:hover {
+          filter: unset;
+          transform: scale(1.01);
+          box-shadow: 5px 10px 18px $red;
+        }
+      }
+    }
+    &_image {
+      width: 25%;
+      height: 33px;
     }
   }
 }
 .hello {
   &_avatar {
-    width: 30%;
-    border-radius: 10px;
+    width: 40%;
+    border-radius: 25px;
 
     &_div {
+      width: 50%;
     }
   }
 }

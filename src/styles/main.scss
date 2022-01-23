@@ -8,9 +8,9 @@ body,
   color: $white;
   height: 100vh;
   box-sizing: border-box;
-  background-image: url(.././assets/photos/website_background.jpeg);
+  background-image: url(.././assets/photos/background.jpeg);
   background-attachment: fixed;
-  background-color: #f4f4f4;
+  background-color: $red;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
