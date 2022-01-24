@@ -3,23 +3,23 @@
 .form {
   padding: 20px;
   text-align: center;
-  border: 2px solid #000;
-  border-radius: 10px;
   // box-shadow: 5px 10px 18px #888888;
-  background-color: $blue;
+  background-color: $grey;
   display: flex;
   flex-wrap: wrap;
 
   & input,
   & textArea {
-    background-color: $red;
+    background-color: $black;
     color: $white;
     font-size: 16px;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
     margin: 0 25%;
+    max-width: 500px;
   }
+
   & textArea {
     margin: 10px 5%;
     height: 200px;
@@ -41,6 +41,7 @@
   &_heading {
     text-align: initial;
     color: $white;
+    text-align: center;
   }
   &_div {
     width: 40%;

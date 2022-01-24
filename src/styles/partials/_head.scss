@@ -4,33 +4,32 @@
   &_main {
     color: $white;
     text-align: center;
-    // width: 50%;
-    // margin-left: 50%;
-    // margin-top: 10px;
-
+    margin-bottom: 40px;
+    height: 600px;
+    background-color: $grey;
+    padding: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    &_title {
+    &_title,
+    &_sub {
       margin: 0;
-
-      &_sub {
-        margin: 0;
-      }
+      font-size: 5.555555555555555rem;
+      line-height: 4.888888888888889rem;
+      letter-spacing: -0.25rem;
     }
   }
   &_details {
+    margin: 0;
     &_div {
-      width: 50%;
+      width: 100%;
       display: flex;
-      justify-content: space-evenly;
-      padding-top: 45px;
+      justify-content: end;
       &_small {
-        width: 20%;
-        height: 90px;
-        background-color: $red;
-        border-radius: 25px;
-        padding: 6px;
+        width: 10%;
+        height: 70px;
+        padding: 16px;
 
         &:hover {
           filter: unset;
@@ -40,18 +39,16 @@
       }
     }
     &_image {
-      width: 25%;
-      height: 33px;
+      height: 15px;
     }
   }
 }
 .hello {
   &_avatar {
-    width: 40%;
-    border-radius: 25px;
+    width: 10%;
 
     &_div {
-      width: 50%;
+      width: 80%;
     }
   }
 }

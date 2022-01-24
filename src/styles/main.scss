@@ -4,13 +4,13 @@ html,
 body,
 .App {
   margin: 0;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Gordita-Bold", sans-serif;
   color: $white;
   height: 100vh;
   box-sizing: border-box;
-  background-image: url(.././assets/photos/background.jpeg);
+  // background-image: url(.././assets/photos/background.jpeg);
   background-attachment: fixed;
-  background-color: $red;
+  background-color: $black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,6 +43,7 @@ body,
 }
 
 @import "./partials/head";
+@import "./partials/hero";
 @import "./partials/button";
 @import "./partials/prevProjects";
 @import "./partials/form";

@@ -1,13 +1,11 @@
 .projects {
   width: 45%;
-  height: 620px;
-  // margin-top: 100px;
-  // margin-right: 50%;
-  margin-left: 2%;
-
   &__heading {
     color: $white;
     margin-top: 0;
+    text-align: center;
+    font-size: 5.555555555555555rem;
+    line-height: 4.888888888888889rem;
 
     &-small {
       color: $white;
@@ -29,8 +27,7 @@
     }
   }
   &__div {
-    background: $red;
-    border-radius: 35px;
+    background: $grey;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +51,17 @@
       align-items: center;
       width: 100%;
     }
+  }
+  &_main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
   }
   & span {
   }

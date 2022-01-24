@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import capstoneImage from "../assets/photos/capstone-mock.png";
 import portfolioImage from "../assets/photos/portfolio.png";
 import particleImage from "../assets/photos/particle.png";
@@ -38,56 +38,72 @@ export default function PrevProjects() {
         "A background animation of particles being connected. This was created with JavaScript and a JS library p5.JS. I'm exploring libraries and refreshing my JS skills",
     },
   ]);
-  const [current, setCurrent] = useState(projects[0]);
-  const [active, setActive] = useState(0);
-  const handleSetClick = (event) => {
-    setCurrent(projects[event.target.getAttribute("data-projects")]);
-    setActive(event.target.getAttribute("data-projects"));
-    let click = document.querySelector(".slider__button");
-    click.classList.toggle("_active");
-    console.log(active);
-  };
+
+  // const [current, setCurrent] = useState(projects[0]);
+  // const [active, setActive] = useState(0);
+  // const handleSetClick = (event) => {
+  //   setCurrent(projects[event.target.getAttribute("data-projects")]);
+  //   setActive(event.target.getAttribute("data-projects"));
+  //   let click = document.querySelector(".slider__button");
+  //   click.classList.toggle("_active");
+  //   console.log(active);
+  // };
+
+  let getProjects;
+  if (projects && projects.length > 0) {
+    console.log(projects);
+    getProjects = projects.map(function (current) {
+      return (
+        <div className="projects">
+          <div className="projects__div">
+            <div className="projects__div-images">
+              <img
+                src={current.image}
+                alt="capstone-mock"
+                className="projects__image"
+              />
+              <a href={current.liveUrl}>
+                <div className="projects__div-button">
+                  <h3 className="projects__heading-small">View Site</h3>
+                </div>
+              </a>
+            </div>
+            <div className="projects__div-small">
+              <h3 className="projects__summary-heading">Tech-stack:</h3>
+              <p className="projects__tech">{current.techStack}</p>
+              <h3 className="projects__summary-heading"> SUMMARY:</h3>
+              <p className="projects__summary">{current.summary}</p>
+              <a href={current.url}>
+                <div className="projects__div-button">
+                  <h3 className="projects__heading-small">View Source Code</h3>
+                </div>{" "}
+              </a>
+            </div>
+          </div>
+          {/* <div className="slider">
+            {Object.keys(projects).map((index) => {
+              return (
+                <div
+                  onClick={(event) => handleSetClick(event)}
+                  data-projects={index}
+                  key={index}
+                  className="slider__button"
+                />
+              );
+            })}
+          </div> */}
+        </div>
+      );
+    });
+  }
+  useEffect(() => {
+    console.log("i ran");
+  });
 
   return (
-    <div className="projects">
+    <div className="projects_main">
       <h1 className="projects__heading">Projects</h1>
-      <div className="projects__div">
-        <div className="projects__div-images">
-          <img
-            src={current.image}
-            alt="capstone-mock"
-            className="projects__image"
-          />
-          {/* <a href={current.liveUrl}>
-            <div className="projects__div-button">
-              <h3 className="projects__heading-small">View Site</h3>
-            </div>
-          </a> */}
-        </div>
-        <div className="projects__div-small">
-          <h3 className="projects__summary-heading">Tech-stack:</h3>
-          <p className="projects__tech">{current.techStack}</p>
-          <h3 className="projects__summary-heading"> SUMMARY:</h3>
-          <p className="projects__summary">{current.summary}</p>
-          <a href={current.url}>
-            <div className="projects__div-button">
-              <h3 className="projects__heading-small">View Source Code</h3>
-            </div>{" "}
-          </a>
-        </div>
-      </div>
-      <div className="slider">
-        {Object.keys(projects).map((index) => {
-          return (
-            <div
-              onClick={(event) => handleSetClick(event)}
-              data-projects={index}
-              key={index}
-              className="slider__button"
-            />
-          );
-        })}
-      </div>
+      <div className="projects_list">{getProjects}</div>
     </div>
   );
 }

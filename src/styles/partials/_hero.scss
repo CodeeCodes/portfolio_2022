@@ -1,0 +1,10 @@
+.hero_div {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 50px;
+  &_image {
+    height: 500px;
+    object-fit: contain;
+  }
+}

@@ -48,6 +48,7 @@ export default function Form() {
             name="message"
             className="form_message"
             placeholder="Message"
+            maxLength="500"
           />
           <input className="form_button" type="submit" value="Send" />
         </form>
