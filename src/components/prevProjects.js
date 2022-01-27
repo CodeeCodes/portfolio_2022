@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import capstoneImage from "../assets/photos/capstone-mock.png";
 import portfolioImage from "../assets/photos/portfolio.png";
 import particleImage from "../assets/photos/particle.png";
+import pokemonImage from "../assets/photos/pokemon_mock.png";
 
 // import liveImage from "../assets/svg/live.svg";
 
@@ -9,8 +10,8 @@ export default function PrevProjects() {
   const [projects, setProjects] = useState([
     {
       name: "Pokemon TCG Prices",
-      image: `${capstoneImage}`,
-      url: "https://github.com/CodeeCodes/capstone-codee-palmer",
+      image: `${pokemonImage}`,
+      url: "https://github.com/CodeeCodes/Pokemon_TCG_prices",
       techStack: "React, JS, API, SCSS, Axios  ",
       summary:
         "A web application where by using the search function you are able to find a specific Pokemon TCG card or set, you are able to also scroll through different sets and cards. This application was build using React and using Axios to make API calls.",
@@ -78,7 +79,7 @@ export default function PrevProjects() {
               <p className="projects__tech">{current.techStack}</p>
               <h3 className="projects__summary-heading"> SUMMARY:</h3>
               <p className="projects__summary">{current.summary}</p>
-              <a href={current.url}>
+              <a href={current.url} target="_blank" rel="noopener noreferrer">
                 <div className="projects__div-button">
                   <h3 className="projects__heading-small">View Source Code</h3>
                 </div>{" "}
