@@ -16,12 +16,12 @@ function App() {
       <Hero />
       <div className="main_div">
         <PreviousProj />
-        <Tech />
-        {""}
-        {/* <Button /> */}
+        <div className="main_div_second">
+          <Tech />
+          <Form />
+        </div>
       </div>
       <div className="footer">
-        <Form />
         <Footer />
       </div>
     </div>

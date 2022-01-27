@@ -8,6 +8,15 @@ import particleImage from "../assets/photos/particle.png";
 export default function PrevProjects() {
   const [projects, setProjects] = useState([
     {
+      name: "Pokemon TCG Prices",
+      image: `${capstoneImage}`,
+      url: "https://github.com/CodeeCodes/capstone-codee-palmer",
+      techStack: "React, JS, API, SCSS, Axios  ",
+      summary:
+        "A web application where by using the search function you are able to find a specific Pokemon TCG card or set, you are able to also scroll through different sets and cards. This application was build using React and using Axios to make API calls.",
+    },
+    {
+      name: "Capstone Project",
       image: `${capstoneImage}`,
       url: "https://github.com/CodeeCodes/capstone-codee-palmer",
       techStack: "React, NodeJS, ExpressJS, MongoDb",
@@ -15,13 +24,7 @@ export default function PrevProjects() {
         "  Sprint is an app, which allows anyone new to a city or new to the exercise world, connecting people in Vancouver about running routes around the city. See what people say about that route and follow yourself as you run these routes. Have up to date weather conditions and join the chat board to organize meetups and look up local races and runs around Vancouver .This is an app based around getting people moving with confidence and hopefully get like minded people connected.",
     },
     {
-      image: `${capstoneImage}`,
-      url: "https://github.com/CodeeCodes/capstone-codee-palmer",
-      techStack: "React, NodeJS, ExpressJS, MongoDb",
-      summary:
-        "  Sprint is an app, which allows anyone new to a city or new to the exercise world, connecting people in Vancouver about running routes around the city. See what people say about that route and follow yourself as you run these routes. Have up to date weather conditions and join the chat board to organize meetups and look up local races and runs around Vancouver .This is an app based around getting people moving with confidence and hopefully get like minded people connected.",
-    },
-    {
+      name: "Portfolio",
       image: `${portfolioImage}`,
       url: "https://github.com/CodeeCodes/portfolio-codee-palmer",
       liveUrl: "https://www.codeecodes.com/",
@@ -30,6 +33,7 @@ export default function PrevProjects() {
         "My first portfolio created using ReactJS and published using Github Pages. Using my foundations learnt at BrainStation Vancouver, I've built my portfolio to showcase my skills",
     },
     {
+      name: "Particle JS",
       image: `${particleImage}`,
       url: "https://github.com/CodeeCodes/particle-background",
       liveUrl: "https://codeecodes.github.io/particle-background/",
@@ -56,6 +60,7 @@ export default function PrevProjects() {
       return (
         <div className="projects">
           <div className="projects__div">
+            <h1 className="projects_name">{current.name}</h1>
             <div className="projects__div-images">
               <img
                 src={current.image}

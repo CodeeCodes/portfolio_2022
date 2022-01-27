@@ -22,24 +22,63 @@
   }
   &_details {
     margin: 0;
+    font-size: 11px;
+
     &_div {
       width: 100%;
       display: flex;
       justify-content: end;
-      &_small {
-        width: 10%;
-        height: 70px;
-        padding: 16px;
+      list-style: none;
+      transition: all 0.35s ease;
+      text-transform: uppercase;
 
-        &:hover {
-          filter: unset;
-          transform: scale(1.01);
-          box-shadow: 5px 10px 18px $red;
+      &_small {
+        height: fit-content;
+        padding: 16px;
+        padding-bottom: 1px;
+        &_link {
+          position: relative;
+          text-decoration: none;
+          font-size: 40px;
+        }
+        &_link::before,
+        &_link::after {
+          content: "";
+          height: 14px;
+          width: 14px;
+          position: absolute;
+          transition: all 0.35s ease;
+          opacity: 0;
+        }
+        &_link::before {
+          content: "";
+          right: -10px;
+          top: -10px;
+          border-top: 3px solid green;
+          border-right: 3px solid green;
+          transform: translate(-100%, 50%);
+        }
+        &_link::after {
+          content: "";
+          left: -10px;
+          bottom: 0px;
+          border-bottom: 3px solid green;
+          border-left: 3px solid green;
+          transform: translate(100%, -50%);
+        }
+        &_link:hover:before,
+        &_link:hover:after {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+        &_link:hover {
+          color: $red;
         }
       }
     }
     &_image {
-      height: 15px;
+      height: 2rem;
+      margin-bottom: 5px;
     }
   }
 }

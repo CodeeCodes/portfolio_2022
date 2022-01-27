@@ -3,7 +3,6 @@
 .form {
   padding: 20px;
   text-align: center;
-  // box-shadow: 5px 10px 18px #888888;
   background-color: $grey;
   display: flex;
   flex-wrap: wrap;
@@ -42,9 +41,10 @@
     text-align: initial;
     color: $white;
     text-align: center;
+    font-size: 3.3333333rem;
+    line-height: 4.888888888888889rem;
   }
   &_div {
-    width: 40%;
-    margin-right: 52%;
+    width: 48%;
   }
 }

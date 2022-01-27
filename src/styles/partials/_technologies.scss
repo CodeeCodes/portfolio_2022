@@ -1,5 +1,5 @@
 .tech {
-  width: 50%;
+  width: 48%;
 
   &__image {
     height: 40px;
@@ -8,7 +8,9 @@
     &-div {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      height: 468px;
+      justify-content: space-between;
+
       &-small {
         width: 25%;
         height: 120px;
@@ -32,7 +34,7 @@
   &__heading {
     color: $white;
     text-align: center;
-    font-size: 5.555555555555555rem;
+    font-size: 3.3333333rem;
     line-height: 4.888888888888889rem;
   }
 }

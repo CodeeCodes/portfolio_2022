@@ -1,10 +1,19 @@
-.hero_div {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  padding: 50px;
-  &_image {
-    height: 500px;
-    object-fit: contain;
+.hero {
+  &_div {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 50px;
+    &_image {
+      height: 500px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &_heading {
+    width: 100%;
+    text-align: center;
+    font-size: 3.3333333rem;
+    line-height: 4.888888888888889rem;
   }
 }

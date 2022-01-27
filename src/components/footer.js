@@ -5,7 +5,6 @@ export default function Footer() {
     <div className="footer_main">
       <div className="footer__heading-div">
         <h1 className="footer__heading">
-          Let's Work Together{" "}
           <span role="img" aria-label="emoji">
             {" "}
             🙌
